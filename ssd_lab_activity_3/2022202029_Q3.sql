@@ -1,0 +1,3 @@
+SELECT Essn, COUNT(*) FROM WORKS_ON WHERE
+ Essn=( SELECT Mgr_ssn from DEPARTMENT where
+Dnumber=( SELECT Dnum FROM PROJECT WHERE PNAME="ProductY")) GROUP BY Essn;
