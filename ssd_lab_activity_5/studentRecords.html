@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="studentRecord.css"> 
+</head>
+<script>
+function insert()
+{
+	var name = document.getElementById("name");
+	var table = document.getElementById("table");
+	var roll = document.getElementById("roll");
+	var rem = document.getElementById("table").rows.length;
+	var row = table.insertRow(rem);
+	var cell1 = row.insertCell(0);
+	var cell2 = row.insertCell(1);
+	cell1.innerHTML = name.value;
+	cell2.innerHTML = roll.value;
+	name.value="";
+	roll.value="";
+}
+
+function remove()
+{
+	var rem = document.getElementById("table").rows.length;
+	if(rem>1)
+	{
+	 	document.getElementById("table").deleteRow(rem-1);
+
+	}
+}
+</script>
+<body>
+
+	<h1 class="center">Student Record</h1>
+	<div class="center">
+	<label for="name">Name</label>
+    <input type="text" id="name" name="name"><br><br>
+ 	<label for="roll">Roll No.</label>
+    <input type="text" id="roll" name="roll"><br><br>
+    <button type="button"  class="add" onclick="insert()">ADD</button><br><br>
+    <button type="button" class="remove" onclick="remove()">Remove</button><br><br>
+	</div>
+	<!--table -->
+	<table id="table" class="center">
+	<tr>
+    <th>Student</th>
+    <th>Roll No.</th>
+  	</tr>
+	
+	</table>
+</body>
+</html>

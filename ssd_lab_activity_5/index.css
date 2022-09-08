@@ -1,0 +1,30 @@
+.center {
+text-align: center;
+}
+body { 
+background-image: linear-gradient(to right, #4e54c8, #8f94fb);
+ }
+
+ div {
+ 	position: absolute;
+ 	border-radius: 25px;
+ 	margin-top: 20px;
+ 	top: 50%;
+    left: 40%;
+    height: 200px;
+    width: 300px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    text-align: center;
+
+
+ }
+ .great {
+ 	background: green;
+ 	font-family: "Comic Sans MS";
+
+ }
+
+.great:hover {
+	display: "Add text";
+    border-color: yellow;
+}

@@ -1,0 +1,31 @@
+.add {
+	background-color: green;
+}
+
+.remove {
+	background-color: darkred;
+}
+.center {
+text-align: center;
+}
+body { 
+background-image: linear-gradient(to right, #4e54c8, #8f94fb);
+font-family: Arial;
+ }
+
+th, td {
+  padding: 15px;
+  border: 1px solid black;
+}
+
+table {
+	width: 100%;
+	border: 1px solid black;
+}
+
+th {
+	background-color: purple;
+}
+.center {
+text-align: center;
+}
